@@ -1,0 +1,44 @@
+Hey, I have extracted two tables of information in "ChatGPT" subreddit in reddit using API.
+1st table is as follows: (giving you just two rows for information)
+
+post_id	subreddit	created_date	selftext	post_url	post_title	link_flair_text	score	num_comments	upvote_ratio	created_year
+0	144lfc1	ChatGPT	2023-06-09 02:46:59		https://i.redd.it/81rl4zdt1v4b1.png	Turned ChatGPT into the ultimate bro	Funny	67521	1147	0.96	2023
+1	1av10qh	ChatGPT	2024-02-20 04:07:20		https://v.redd.it/td4k2r8idmjc1	Will smith is wild for this	Funny	56166	1706	0.86	2024
+
+Another table is about post_id and comments in it. 
+post_id	comment
+0	144lfc1	Hey /u/rich_awo, please respond to this commen...
+1	144lfc1	I tried the exact inputs and this is what I go...
+2	144lfc1	Broseph Stalin has me dead hahahaha.
+
+I wanted to do something with this data and add it in my portfolio project for data science and analytics using python. I wanted to impress the recruiters. Tell me what to do?
+
+
+
+
+
+
+Hey, I have extracted two tables of information in "ChatGPT" subreddit in reddit using API.
+1st table is as follows: (giving you just two rows for information)
+
+Dataframe1: "posts_df"
+post_id	subreddit	created_date	selftext	post_url	post_title	link_flair_text	score	num_comments	upvote_ratio	created_year
+0	144lfc1	ChatGPT	2023-06-09 02:46:59		https://i.redd.it/81rl4zdt1v4b1.png	Turned ChatGPT into the ultimate bro	Funny	67521	1147	0.96	2023
+1	1av10qh	ChatGPT	2024-02-20 04:07:20		https://v.redd.it/td4k2r8idmjc1	Will smith is wild for this	Funny	56166	1706	0.86	2024
+
+Another dataframe: "comments_df" 
+post_id	comment
+0	144lfc1	Hey /u/rich_awo, please respond to this commen...
+1	144lfc1	I tried the exact inputs and this is what I go...
+2	144lfc1	Broseph Stalin has me dead hahahaha.
+
+Then, I have merged posts_df and comments_df to get this 3rd dataframe
+"comments_post_df"
+
+
+	post_id	subreddit	created_date	selftext	post_url	post_title	link_flair_text	score	num_comments	upvote_ratio	created_year	comment
+0	144lfc1	ChatGPT	2023-06-09 02:46:59		https://i.redd.it/81rl4zdt1v4b1.png	Turned ChatGPT into the ultimate bro	Funny	67521	1147	0.96	2023	Hey /u/rich_awo, please respond to this commen...
+1	144lfc1	ChatGPT	2023-06-09 02:46:59		https://i.redd.it/81rl4zdt1v4b1.png	Turned ChatGPT into the ultimate bro	Funny	67521	1147	0.96	2023	I tried the exact inputs and this is what I go...
+
+I have data from 2022 to 2024
+Now, I wanted to create a visual showing how number of posts changed across different months from all these years. Maybe a line chart. How to show? 
